@@ -24,11 +24,11 @@ function move(event) {
             global.playerObject.xVelocity = 200;
             global.playerObject.yVelocity = 0;
             global.playerObject.switchCurrentSprites(0, 2);
-            global.playerObject.facing = 'd'; // d = right do that for every thing
+            global.playerObject.facing = 'd'; 
             break;
-        case "e": // for slashing
-            global.playerObject.cureEnemy();
+        case "e": // for curing the enemy
             // create object in the direction player is facing
+            global.playerObject.cureEnemy();
             break;
 
     }

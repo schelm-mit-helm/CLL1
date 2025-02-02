@@ -17,43 +17,6 @@ global.ctx = canvas.getContext("2d");
 global.ctx.imageSmoothingEnabled = false;
 global.prevTotalRunningTime = 0;
 
-// // Sound related variables
-// global.soundOn = true; // shows if sound is on or not
-
-// global.startMusic = new Audio("./assets/sounds/menue.mp3");
-// global.levelMusic = new Audio("./assets/sounds/level.music.mp3"); 
-// global.gameoverMusic = new Audio("./assets/sounds/lost.mp3");
-// global.winMusic = new Audio("./assets/sounds/win.mp3");
-// global.tutorialMusic = new Audio("./assets/sounds/tutorial.mp3");
-
-// // function to turn all sounds on/off
-
-// global.switchSound = function () {
-//     global.soundOn = !global.soundOn;
-
-//     if (!global.soundOn) {
-//         //Mute all sounds
-//         global.startMusic.pause();
-//         global.levelMusic.pause();
-//         global.gameoverMusic.pause();
-//         global.winMusic.pause();
-//         global.tutorialMusic.pause();
-//     } else {
-//         if(startGameScreen.style.display === "block") {
-//             global.startMusic.play();
-//         } else if (global.gameRunning) {
-//             global.levelMusic.play();
-//         } else if (gameOverScreen.style.display === "flex") {
-//             global.gameoverMusic.play();
-//         } else if (winScreen.style.display === "flex") {
-//             global.winMusic.play();
-//         } else if (tutorialScreen.style.display === "flex") {
-//             global.tutorialMusic.play();
-//         }
-//     }
-// };
-
-
 
 global.getCanvasBounds = function () {
     let bounds = {
@@ -99,7 +62,7 @@ global.updateScore = function () {
     const scoreElement = document.getElementById('score'); 
     // Update its content 
     scoreElement.textContent = `Score: ${global.score}/5`;
-
+    // Check if the score is 5, if it is, display the win screen
     if(global.score >= 5){
         screens.displayWinScreen(); 
     }

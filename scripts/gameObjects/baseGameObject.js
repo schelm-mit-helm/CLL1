@@ -40,16 +40,16 @@ class BaseGameObject {
 
     draw = function () {
         let sprite = this.getNextSprite();
-        // console.log(this.animationData.animationSprites);
         global.ctx.drawImage(sprite, this.x, this.y, this.width, this.height);
     };
 
     getNextSprite = function () {
         this.animationData.currentSpriteElapsedTime += global.deltaTime;
-
+        // if the time elapsed is greater than the time per sprite, we switch to the next sprite
         if (this.animationData.currentSpriteElapsedTime >= this.animationData.timePerSprite) {
             this.animationData.currentSpriteIndex++;
             this.animationData.currentSpriteElapsedTime = 0;
+            // if the current sprite index is greater than the last sprite index, we reset it to the first sprite index
             if (this.animationData.currentSpriteIndex > this.animationData.lastSpriteIndex) {
                 this.animationData.currentSpriteIndex = this.animationData.firstSpriteIndex
             }
@@ -69,14 +69,11 @@ class BaseGameObject {
        }
     };
     loadImagesFromSpritesheet(spritesheetPath, cols, rows) {
-        // Calculate the number of rows and columns
-        //const cols = Math.floor(spritesheetWidth / singleSpriteWidth);
-        //const rows = Math.floor(spritesheetHeight / singleSpriteHeight);
+        // Calculate the number of rows and columns in the spritesheet
         const totalSprites = cols * rows;
-    
         // Pre-create an array with `Image` objects for all sprites
         this.animationData.animationSprites = Array.from({ length: totalSprites }, () => new Image());
-    
+
         // Load the spritesheet
         const spritesheet = new Image();
         spritesheet.src = spritesheetPath;
@@ -126,10 +123,10 @@ class BaseGameObject {
         
     }
 
-    objectMovementTimer = function () {// PETTTAA damit die funktion nicht errors macht und bei allen 
+    objectMovementTimer = function () {
 
     }
-
+     
     switchCurrentSprites = function(firstSpriteIndex, lastSpriteIndex){
         this.animationData.firstSpriteIndex = firstSpriteIndex;
         this.animationData.lastSpriteIndex = lastSpriteIndex;

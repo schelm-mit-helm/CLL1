@@ -65,11 +65,6 @@ class Player extends BaseGameObject {
             case "Enemy":
                 this.determineDamage(1);
                 this.updateHealth();
-                // let originalColor = this.color; 
-                // this.color = "red"; // Temporary color change
-                // setTimeout(() => {
-                //     this.color = originalColor; // Revert color
-                // }, 200);
                 break;
         }
     }
@@ -113,9 +108,7 @@ class Player extends BaseGameObject {
 
     constructor(x, y, width, height) {
         super(x, y, width, height), // writing super adresses the constructor from the class that we extend from, in this  caseBaseGameOject
-            // this.loadImages(["./images/pacMan0.png", "./images/pacMan1.png", "./images/pacMan2.png"])
             this.loadImagesFromSpritesheet("./assets/images/spritesheet_wizard.png", 3, 4);
-        // console.log(this.animationData.animationSprites.length);
     }
 }
 export { Player } 
