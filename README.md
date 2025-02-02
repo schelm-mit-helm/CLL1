@@ -16,16 +16,14 @@
 
 ### Main Gameplay:
 <div style="text-align: center;">
-  <img src="gameplay.png" alt="Gameplay Screenshot" width="600">
-  <p>*Figure 1: Example of gameplay in action.*</p>
+  <img src="1.18_gamauf_helena_02.png" alt="Gameplay Screenshot" width="600">
 </div>
 
 ---
 
-### Menu and UI:
+### This is the Start Screen:
 <div style="text-align: center;">
-  <img src="menu.png" alt="Menu UI Screenshot" width="600">
-  <p>*Figure 2: Menu and user interface.*</p>
+  <img src="./assets/images/startscreen.png" alt="Start screen" width="600">
 </div>
 
 ---
@@ -33,19 +31,22 @@
 ## 🧙🧙‍♂️ **Spritesheets**
 Below are the sprites used to create characters and objects in the game:
 
-### Player Character:
+### Player:
 <div style="text-align: center;">
-  <img src="playersheet.png" alt="Player Spritesheet" width="500">
-  <p>*Figure 3: Player character animations.*</p>
+  <img src="./assets/images/spritesheet_wizard.png" alt="Wizard Spritesheet" width="96">
 </div>
 
 ---
 
-### Enemies and NPCs:
+### Enemies and Items:
 <div style="text-align: center;">
-  <img src="enemysheet.png" alt="Enemy Spritesheet" width="500">
-  <p>*Figure 4: Enemy animations.*</p>
+  <img src="./assets/images/Enemy1.png" alt="Enemy Spritesheet 1" width="32">
+  <img src="./assets/images/enemy2.png" alt="Enemy Spritesheet 2" width="32">
 </div>
+<div style="text-align: center;">
+  <img src="./assets/images/flower.png" alt="Enemy Spritesheet 1" width="32">
+</div>
+
 
 ---
 
