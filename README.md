@@ -8,7 +8,7 @@
 ---
 
 ## 💖 **Play the Game**
-[Click here to play the game!]()
+[Click here to play the game!](https://schelm-mit-helm.github.io/CLL1/)
 
 ---
 
