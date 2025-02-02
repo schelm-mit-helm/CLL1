@@ -33,15 +33,15 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Player:
 <div style="text-align: center;">
-  <img src="spritesheet_wizard.png" alt="Wizard Spritesheet" width="500">
+  <img src="./assets/images/spritesheet_wizard.png" alt="Wizard Spritesheet" width="500">
 </div>
 
 ---
 
 ### Enemies and NPCs:
 <div style="text-align: center;">
-  <img src="enemy1.png" alt="Enemy Spritesheet 1" width="500">
-  <img src="enemy2.png" alt="Enemy Spritesheet 2" width="500">
+  <img src="./assets/images/enemy1.png" alt="Enemy Spritesheet 1" width="250">
+  <img src="./assets/images/enemy2.png" alt="Enemy Spritesheet 2" width="250">
 </div>
 
 ---
