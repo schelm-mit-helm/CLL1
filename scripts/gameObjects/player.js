@@ -41,7 +41,7 @@ class Player extends BaseGameObject {
                 this.switchCurrentSprites(this.animationData.firstSpriteIndex, this.animationData.firstSpriteIndex);
                 break;
             case "Flower":
-                console.log("Collided with candy");
+                collidingObject.active = false;
                 break;
             case "Enemy":
                 this.determineDamage(1);
