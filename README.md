@@ -16,7 +16,7 @@
 
 ### Main Gameplay:
 <div style="text-align: center;">
-  <img src="1.18_gamauf_helena_02.png" alt="Gameplay Screenshot" width="600">
+  <img src="./assets/images/1.18_gamauf_helena_02.png" alt="Gameplay Screenshot" width="600">
 </div>
 
 ---
