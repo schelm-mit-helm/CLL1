@@ -16,7 +16,7 @@
 
 ### Main Gameplay:
 <div style="text-align: center;">
-  <img src="gameplay.png" alt="Gameplay Screenshot" width="600">
+  <img src="" alt="Gameplay Screenshot" width="600">
   <p>*Figure 1: Example of gameplay in action.*</p>
 </div>
 
@@ -24,7 +24,7 @@
 
 ### Menu and UI:
 <div style="text-align: center;">
-  <img src="menu.png" alt="Menu UI Screenshot" width="600">
+  <img src="" alt="Menu UI Screenshot" width="600">
   <p>*Figure 2: Menu and user interface.*</p>
 </div>
 
