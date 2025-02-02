@@ -34,7 +34,6 @@ class Enemy extends BaseGameObject {
 
         this.x += this.xVelocity * global.deltaTime;
         this.y += this.yVelocity * global.deltaTime;
-        this.screenWrap();
     }
 
     randomizeMovement() {
@@ -61,20 +60,6 @@ class Enemy extends BaseGameObject {
                 this.xVelocity = 150 * (makePositive > 0.5 ? 1 : -1);
                 this.yVelocity = 0;
             }
-        }
-    }
-
-    screenWrap() {
-        const canvasBounds = global.getCanvasBounds();
-        const bounds = this.getBoxBounds();
-        if (bounds.left >= canvasBounds.right) {
-            this.x = canvasBounds.left - this.width;
-        } else if (bounds.right <= canvasBounds.left) {
-            this.x = canvasBounds.right;
-        } else if (bounds.bottom <= canvasBounds.top) {
-            this.y = canvasBounds.bottom;
-        } else if (bounds.top >= canvasBounds.bottom) {
-            this.y = canvasBounds.top - this.height;
         }
     }
 

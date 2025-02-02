@@ -29,25 +29,6 @@ class Player extends BaseGameObject {
         this.x += this.xVelocity * global.deltaTime; // Adjust x and y position based on velocity and time elapsed since last frame ( == deltaTime)
         this.y += this.yVelocity * global.deltaTime;
         this.cantakedamage -= 1 * global.deltaTime;
-        this.screenWrap();
-    }
-
-
-    screenWrap = function () {
-        let canvasBounds = global.getCanvasBounds();
-        let pacManBounds = this.getBoxBounds();
-        if (pacManBounds.left >= canvasBounds.right) {
-            this.x = canvasBounds.left - this.width;
-        }
-        else if (pacManBounds.right <= canvasBounds.left) {
-            this.x = canvasBounds.right;
-        }
-        else if (pacManBounds.bottom <= canvasBounds.top) {
-            this.y = canvasBounds.bottom;
-        }
-        else if (pacManBounds.top >= canvasBounds.bottom) {
-            this.y = canvasBounds.top - this.height;
-        }
     }
 
     reactToCollision = function (collidingObject) {
