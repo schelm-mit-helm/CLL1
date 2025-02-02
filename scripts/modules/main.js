@@ -30,7 +30,6 @@ function gameLoop(totalRunningTime) {
 }
 
 function setupGame() {
-    console.log("hölle ja");
     global.resetGlobals();
     global.gameRunning = true;
     global.prevTotalRunningTime	= performance.now();

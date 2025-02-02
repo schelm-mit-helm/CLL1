@@ -89,9 +89,7 @@ class Player extends BaseGameObject {
     }
     determineDamage = function (damage) {
         if (this.cantakedamage <= 0) {
-            console.log('hölle');
             this.health -= damage;
-            console.log(this.health);
             this.cantakedamage = this.invincibility;
         }
     }
@@ -107,7 +105,7 @@ class Player extends BaseGameObject {
     }
 
     constructor(x, y, width, height) {
-        super(x, y, width, height), // writing super adresses the constructor from the class that we extend from, in this  caseBaseGameOject
+        super(x, y, width, height), 
             this.loadImagesFromSpritesheet("./assets/images/spritesheet_wizard.png", 3, 4);
     }
 }
