@@ -23,7 +23,7 @@
 
 ### This is the Start Screen:
 <div style="text-align: center;">
-  <img src="startscreen.png" alt="Start screen" width="600">
+  <img src="./assets/images/startscreen.png" alt="Start screen" width="600">
 </div>
 
 ---
