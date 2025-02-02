@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Real Story of a True Spirit Who Kind of Turned Very Angry ~by Helena Gamauf </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="icon" href="./assets/images/icon.png">
+</head>
+<body>
+  <div id="start-screen" style="display: none;">
+    <img id="start-background" src="./assets/images/startscreen.png" alt="Start Screen">
+    <img id="start-button" src="./assets/images/StartScreenPlayButton.png" alt="Start Game">
+    <img id="gototutorial-button" src="./assets/images/StartScreenHowTo.png" alt="How to play">
+    <img id="sound-button" src="./assets/images/sound on.png" alt="Turn the sound on">
+  </div>
+  <div id="gameover-screen" style="display: none;">
+    <img id="gameover-background" src="./assets/images/gameoverScreen.png" alt="Gameover Screen">
+    <img id="gameover-button" src="./assets/images/gameoverScreenButton.png" alt="Restart Game">
+  </div>
+  <div id="win-screen" style="display: none;">
+    <img id="win-background" src="./assets/images/winScreen.png" alt="Win Screen">
+    <img id="win-button" src="./assets/images/winScreenButton.png" alt="Restart Game">
+  </div>
+  <div id="tutorial-screen" style="display: none;">
+    <img id="tutorial-background" src="./assets/images/tutorial.png" alt="Tutorial Screen">
+    <img id="tutorial-button" src="./assets/images/StartScreenPlayButton.png" alt="Start Game">
+  </div>
+  <div id="score">Score: 0/5</div>
+  <div id="health">
+    <img id="healthbar" src="" alt="Health Bar">
+  </div>
+  <canvas id="canvas" width="900" height="600"></canvas>
+
+  <script type="module" src="./scripts/modules/global.js"></script>
+  <script type="module" src="./scripts/modules/input.js"></script>
+  <script type="module" src="./scripts/modules/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Load the pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General body styles to center elements */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+    margin: 0;
+}
+
+/* Style the score element */
+#score {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif; /* Use a pixel font */
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px;
+    border: 2px solid #931414;
+    display: inline-block;
+    margin-bottom: 10px; /* Space between the score and the canvas */
+}
+
+#health {
+    background-color: #000;
+    padding: 10px;
+    border: 2px solid #431818;
+    display: inline-block;
+    margin-bottom: 10px; 
+   /* Space between the score and the canvas */
+
+}
+
+#healthbar {
+    width: 100%;
+    height: auto;
+}
+
+#canvas {
+    background-color: #14080c;
+    border: 2px solid #792020;
+}
+
+
+
+
+#start-background,#tutorial-background,#gameover-background,#win-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    z-index: 0;
+} 
+
+#start-button {
+    /* 💖 */
+    top: 62%;
+    left: 39%;
+    position: relative;
+    z-index: 3; 
+    cursor: pointer; 
+} 
+
+#gameover-button {
+    /* 💖 */
+    top: 29%;
+    position: relative;
+    z-index: 2; 
+    cursor: pointer; 
+    margin-top: 20px;
+    align-self: center;
+} 
+
+#tutorial-screen, #gameover-screen, #win-screen { 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 800px;
+    background-color: black; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+#start-screen { 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 800px;
+    background-color: black; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+#win-button {
+/* 💖 */ 
+    top: 5%;
+    position: relative;
+    z-index: 2; 
+    cursor: pointer; 
+    margin-top: 20px;
+    align-self: center;
+} 
+
+
+
+#tutorial-button {
+    /* 💖 */
+    top: 30%;
+    position: relative;
+    z-index: 2; 
+    cursor: pointer; 
+    margin-top: 20px;
+    align-self: center;
+} 
+
+#gototutorial-button {
+    /* 💖 */
+    top: 73%;
+    left: 16%;
+    position: relative;
+    z-index: 2; 
+    cursor: pointer; 
+    margin-top: 20px;
+    align-self: center;
+}
+
+#sound-button {
+    /* 💖 */
+    top: 62%;
+    left: -17%;
+    position: relative;
+    z-index: 4; 
+    cursor: pointer; 
+    margin-top: 20px;
+    align-self: center;
+}
