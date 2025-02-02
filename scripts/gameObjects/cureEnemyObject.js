@@ -24,7 +24,7 @@ class CureEnemyObject extends BaseGameObject {
     }
     constructor(x, y, width, height, facing) {
         super(x, y, width, height);
-        this.loadImages(["./assets/images/cureEnemyreal.png"])
+        this.loadImages(["./assets/images/cure-enemyreal.png"])
         console.log('curererer');
         switch (facing) {
             case 'w':
