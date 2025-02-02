@@ -38,11 +38,16 @@ Below are the sprites used to create characters and objects in the game:
 
 ---
 
-### Enemies and NPCs:
+### Enemies and Items:
 <div style="text-align: center;">
   <img src="./assets/images/Enemy1.png" alt="Enemy Spritesheet 1" width="32">
   <img src="./assets/images/enemy2.png" alt="Enemy Spritesheet 2" width="32">
 </div>
+--
+<div style="text-align: center;">
+  <img src="./assets/images/flower.png" alt="Enemy Spritesheet 1" width="32">
+</div>
+
 
 ---
 
